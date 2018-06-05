@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WebViewController.h"
 @interface ViewController ()
 
 @end
@@ -25,5 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onButtonPress:(id)sender {
+    
+    WebViewController* vc = [[WebViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
